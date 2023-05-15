@@ -7,6 +7,9 @@ public class Program
     {
         Console.WriteLine("Welcome To Snake And Ladder!");
         Start start = new Start();
-        start.PlaySnakeAndLadder();
+        PlayerRollsTheDie playerRollsTheDie = new PlayerRollsTheDie();
+
+        int roll = playerRollsTheDie.RollDie();
+        start.PlaySnakeAndLadder(roll);
     }
 }
