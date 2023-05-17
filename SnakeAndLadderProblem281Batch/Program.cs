@@ -8,6 +8,7 @@ public class Program
         Console.WriteLine("Welcome To Snake And Ladder!");
         Start start = new Start();
         PlayerRollsTheDie playerRollsTheDie = new PlayerRollsTheDie();
+        CheckOption checkOption = new CheckOption();
 
         int roll = playerRollsTheDie.RollDie();
         start.PlaySnakeAndLadder(roll);
